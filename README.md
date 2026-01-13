@@ -27,7 +27,7 @@ An educational project demonstrating entity resolution techniques using Neo4j Gr
 
 ```bash
 git clone https://github.com/henrardo/enron_resolution_neo4j.git
-cd Enron_Demo
+cd enron_resolution_neo4j
 
 # Create virtual environment
 python -m venv venv
