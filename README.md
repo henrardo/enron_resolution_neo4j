@@ -26,7 +26,7 @@ An educational project demonstrating entity resolution techniques using Neo4j Gr
 ### 1. Clone and Setup Environment
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/henrardo/enron_resolution_neo4j.git
 cd Enron_Demo
 
 # Create virtual environment
