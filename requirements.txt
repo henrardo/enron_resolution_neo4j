@@ -1,0 +1,17 @@
+# Neo4j and Graph Data Science
+graphdatascience>=1.8,<2.0
+neo4j>=5.14,<6.0
+
+# Data processing
+pandas>=2.0,<3.0
+tqdm>=4.65,<5.0
+
+# Text similarity and NLP
+jellyfish>=1.0,<2.0
+spacy>=3.7,<4.0
+
+# Utilities
+python-dotenv>=1.0,<2.0
+
+# Optional: for extended analysis
+anthropic>=0.18,<1.0  # Only needed if using Claude API features

@@ -1,2 +1,7 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Jupyter Notebooks
+*.ipynb linguist-documentation=false
+*.ipynb linguist-detectable=true
+
+# Better diff for notebooks (requires nbdime)
+*.ipynb diff=jupyternotebook
+*.ipynb merge=jupyternotebook
