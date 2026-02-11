@@ -4,8 +4,10 @@ An educational project demonstrating entity resolution techniques using Neo4j Gr
 
 ## What You'll Learn
 
+- **Notebook 0**: PDF to plain text extraction using PyMuPDF
 - **Notebook 1**: Email parsing, graph modeling, and bulk data import into Neo4j
 - **Notebook 2**: Advanced entity resolution using community detection, node similarity, and string matching algorithms
+- **Notebook 3** *(coming soon)*: Inferring additional features (e.g. stylometry) for improved resolution
 
 ## Prerequisites
 
@@ -41,7 +43,6 @@ pip install -r requirements.txt
 
 Download the Enron email dataset:
 ```bash
-cd Enron_Demo
 wget https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz
 tar -xzf enron_mail_20150507.tar.gz
 ```
@@ -95,7 +96,7 @@ The Enron email dataset contains emails from ~150 Enron employees, primarily sen
 (Mailbox {address})
 (Email {message_id, date, subject, thread})
 
-(User)-[:OWNS]->(Mailbox)
+(User)-[:USED]->(Mailbox)
 (Mailbox)-[:SENT|RECEIVED|CC_ON|BCC_ON]->(Email)
 (User)-[:SENT|RECEIVED|CC_ON|BCC_ON]->(Email)
 ```
@@ -142,10 +143,12 @@ This approach resolves ~5,000 duplicate entities with high confidence.
 ## Project Structure
 
 ```
-Enron_Demo/
+enron_resolution_neo4j/
 ├── demo_notebooks/
+│   ├── 0_pdf_to_plaintext.ipynb     # PDF text extraction
 │   ├── 1_import_to_neo4j.ipynb      # Data import pipeline
-│   └── 2_entity_resolution.ipynb    # Entity resolution workflow
+│   ├── 2_entity_resolution.ipynb    # Entity resolution workflow
+│   └── 3_adding_features.ipynb      # Feature inference for resolution
 ├── requirements.txt                  # Python dependencies
 ├── .env.example                      # Environment template
 ├── .gitignore

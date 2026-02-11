@@ -30,11 +30,17 @@ wheels/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
+# Work in progress notebooks
+demo_notebooks/3_adding_features.ipynb
+
 # Data files
 maildir/
 enron_mail_*.tar.gz
 processed_data/
 *.parquet
+
+# PDFs (reference papers - too large for git)
+pdfs/
 
 # IDEs
 .vscode/
